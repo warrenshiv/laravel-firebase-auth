@@ -22,7 +22,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          composer update -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+          composer update -q --no-ansi --no-interaction --no-scripts --no-progress --ignore-platform-reqs
 
       - name: Generate key
         run: php artisan key:generate
